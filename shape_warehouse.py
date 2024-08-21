@@ -17,6 +17,7 @@ class ShapeWarehouse:
         shape_type = random.choice(shape_types)
         color = random.choice(color_list)
 
+
         if shape_type == 'rectangle':
             length = random.randint(1,10)
             width = random.randint(1,10)
@@ -60,5 +61,3 @@ class ShapeWarehouse:
 
         for shape in self.shape_list:
             colors_dict[shape.color]+=1
-
-
