@@ -1,0 +1,25 @@
+from shape import Shape
+from shape import Rectangle
+from shape import Square
+from shape import Circle
+
+
+def add_square_and_rectangle(square, rectangle):
+    area = square.get_area() + rectangle.get_area()
+    perimeter = square.get_perimeter() + rectangle.get_perimeter()
+    new_shape = Shape(area= area, perimeter= perimeter)
+    return new_shape
+
+def add_two_shapes(shape1,shape2):
+    area = shape1.get_area() + shape2.get_area()
+    perimeter = shape1.get_perimeter() + shape2.get_perimeter()
+    new_shape = Shape(area=area, perimeter=perimeter)
+    return new_shape
+
+def main():
+    square = Square(5)
+    rectangle = Rectangle(6, 2)
+    add_square_and_rectangle(square, rectangle)
+
+if __name__ == '__main__':
+    main()
