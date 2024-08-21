@@ -2,6 +2,7 @@ from shape import Shape
 from shape import Rectangle
 from shape import Square
 from shape import Circle
+from shape_warehouse import ShapeWarehouse
 
 
 def add_square_and_rectangle(square, rectangle):
@@ -20,6 +21,11 @@ def main():
     square = Square(5)
     rectangle = Rectangle(6, 2)
     add_square_and_rectangle(square, rectangle)
+
+    my_container = ShapeWarehouse()
+    print("total area:", my_container.sum_areas())
+    print("total perimeter:", my_container.sum_perimeters())
+    print("colors:", my_container.count_colors())
 
 if __name__ == '__main__':
     main()

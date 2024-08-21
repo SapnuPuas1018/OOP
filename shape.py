@@ -2,7 +2,7 @@ import math
 
 
 class Shape:
-    def __init__(self, color = (0,0,0), area = 0, perimeter = 0):
+    def __init__(self, color = 'white', area = 0, perimeter = 0):
         self.color = color
         self.area = area
         self.perimeter = perimeter
@@ -25,7 +25,7 @@ class Shape:
 
 
 class Rectangle(Shape):
-    def __init__(self, length, width, color = (0,0,0), area = 0, perimeter = 0):
+    def __init__(self, length, width, color = 'white', area = 0, perimeter = 0):
         super().__init__(color, area, perimeter)
         self.length = length
         self.width = width
@@ -36,7 +36,7 @@ class Rectangle(Shape):
 
 
 class Square(Shape):
-    def __init__(self, side, color = (0,0,0), area = 0, perimeter = 0 ):
+    def __init__(self, side, color = 'white', area = 0, perimeter = 0 ):
         super().__init__(color, area, perimeter)
         self.side = side
 
@@ -45,7 +45,7 @@ class Square(Shape):
 
 
 class Circle(Shape):
-    def __init__(self, radius, color = (0,0,0), area = 0, perimeter = 0):
+    def __init__(self, radius, color = 'white', area = 0, perimeter = 0):
         super().__init__(color, area, perimeter)
         self.radius = radius
 
