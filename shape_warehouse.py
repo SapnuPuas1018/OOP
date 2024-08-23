@@ -4,6 +4,8 @@ from shape import Square
 from shape import Circle
 import random
 
+SHAPE_TYPES = ['rectangle', 'square', 'circle']
+COLOR_LIST = ['white', 'black', 'blue', 'red', 'green', 'yellow']
 
 class ShapeWarehouse:
     def __init__(self):
@@ -11,11 +13,8 @@ class ShapeWarehouse:
 
 
     def create_new_shape(self):
-        shape_types = ['rectangle', 'square', 'circle']
-        color_list = ['white', 'black', 'blue', 'red', 'green', 'yellow']
-
-        shape_type = random.choice(shape_types)
-        color = random.choice(color_list)
+        shape_type = random.choice(SHAPE_TYPES)
+        color = random.choice(COLOR_LIST)
 
 
         if shape_type == 'rectangle':
