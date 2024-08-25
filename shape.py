@@ -24,30 +24,8 @@ class Shape:
         return f'color:{self.color}, area: {self.area}, perimeter: {self.perimeter}'
 
 
-class Rectangle(Shape):
-    def __init__(self, length, width, color = 'white', area = 0, perimeter = 0):
-        super().__init__(color, area, perimeter)
-        self.length = length
-        self.width = width
-
-        self.area = self.length * self.width
-        self.perimeter = 2 * (self.length + self.width)
 
 
 
-class Square(Shape):
-    def __init__(self, side, color = 'white', area = 0, perimeter = 0 ):
-        super().__init__(color, area, perimeter)
-        self.side = side
-
-        self.area = self.side ** 2
-        self.perimeter = 4 * self.side
 
 
-class Circle(Shape):
-    def __init__(self, radius, color = 'white', area = 0, perimeter = 0):
-        super().__init__(color, area, perimeter)
-        self.radius = radius
-
-        self.area = math.pi * self.radius ** 2
-        self.perimeter = 2 * math.pi * self.radius

@@ -1,9 +1,7 @@
-from time import gmtime
-
 from shape import Shape
-from shape import Rectangle
-from shape import Square
-from shape import Circle
+from rectangle import Rectangle
+from square import Square
+from circle import Circle
 from shape_warehouse import ShapeWarehouse
 
 

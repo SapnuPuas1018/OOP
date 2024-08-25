@@ -1,7 +1,6 @@
-from shape import Shape
-from shape import Rectangle
-from shape import Square
-from shape import Circle
+from rectangle import Rectangle
+from square import Square
+from circle import Circle
 import random
 
 SHAPE_TYPES = ['rectangle', 'square', 'circle']
