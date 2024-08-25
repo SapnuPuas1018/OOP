@@ -33,8 +33,9 @@ class ShapeWarehouse:
 
     def generate(self, num):
         for i in range(num):
-            new_shape = create_new_shape(self)
+            new_shape = self.create_new_shape()
             self.shape_list.append(new_shape)
+
         return self.shape_list
 
 
@@ -60,3 +61,5 @@ class ShapeWarehouse:
 
         for shape in self.shape_list:
             colors_dict[shape.color]+=1
+
+        return colors_dict
