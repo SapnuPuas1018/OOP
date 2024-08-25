@@ -1,3 +1,9 @@
+"""
+author - Yuval Hayun
+date   - 25/08/24
+OOP shapes
+"""
+
 from shape import Shape
 from rectangle import Rectangle
 from square import Square
@@ -5,25 +11,17 @@ from circle import Circle
 from shape_warehouse import ShapeWarehouse
 
 
-def add_square_and_rectangle(square, rectangle):
-    area = square.get_area() + rectangle.get_area()
-    perimeter = square.get_perimeter() + rectangle.get_perimeter()
-    new_shape = Shape(area= area, perimeter= perimeter)
-    return new_shape
-
-def add_two_shapes(shape1,shape2):
-    area = shape1.get_area() + shape2.get_area()
-    perimeter = shape1.get_perimeter() + shape2.get_perimeter()
-    new_shape = Shape(area=area, perimeter=perimeter)
-    return new_shape
 
 def main():
     square = Square(5)
     rectangle = Rectangle(6, 2)
-    add_square_and_rectangle(square, rectangle)
+    print(square + square)
+    print(square + rectangle)
+    print(rectangle + square)
 
     my_container = ShapeWarehouse()
     my_container.generate(100)
+
     print("total area:", my_container.sum_areas())
     print("total perimeter:", my_container.sum_perimeters())
     print("colors:", my_container.count_colors())

@@ -8,3 +8,9 @@ class Square(Shape):
 
         self.area = self.side ** 2
         self.perimeter = 4 * self.side
+
+    def __add__(self, other):
+        area = self.get_area() + other.get_area()
+        perimeter = self.get_perimeter() + other.get_perimeter()
+        new_shape = Shape(area=area, perimeter=perimeter)
+        return new_shape
