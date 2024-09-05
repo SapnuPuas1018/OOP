@@ -3,7 +3,7 @@ from shape import Shape
 
 class Rectangle(Shape):
     def __init__(self, length, width, color = 'white', area = 0, perimeter = 0):
-        super().__init__(color, area, perimeter)
+        super().__init__(area, perimeter, color)
         self.length = length
         self.width = width
 

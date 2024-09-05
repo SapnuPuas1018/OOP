@@ -9,16 +9,16 @@ class Shape:
     :param perimeter: The perimeter of the shape (default is 0).
     :type perimeter: float
     """
-    def __init__(self, color = 'white', area = 0, perimeter = 0):
+    def __init__(self, area, perimeter, color = 'white'):
         """
-        Initializes a Shape object with color, area, and perimeter.
+        Initializes a Shape object with area, perimeter and color.
 
+        :param area: The area of the shape
+        :type area: float
+        :param perimeter: The perimeter of the shape
+        :type perimeter: float
         :param color: The color of the shape (default is 'white').
         :type color: str
-        :param area: The area of the shape (default is 0).
-        :type area: float
-        :param perimeter: The perimeter of the shape (default is 0).
-        :type perimeter: float
         """
         self.color = color
         self.area = area
