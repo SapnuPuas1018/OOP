@@ -4,10 +4,8 @@ date   - 25/08/24
 OOP shapes
 """
 
-from shape import Shape
 from rectangle import Rectangle
 from square import Square
-from circle import Circle
 from shape_warehouse import ShapeWarehouse
 
 

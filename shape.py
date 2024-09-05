@@ -73,3 +73,21 @@ class Shape:
         :rtype: str
         """
         return f'color:{self.color}, area: {self.area}, perimeter: {self.perimeter}'
+
+
+if __name__ == "__main__":
+    # Create a Shape object with initial values
+    shape = Shape(area=20.5, perimeter=15.0, color='blue')
+
+    # Assert the area and perimeter
+    assert shape.get_area() == 20.5, f"Expected area 20.5, got {shape.get_area()}"
+    assert shape.get_perimeter() == 15.0, f"Expected perimeter 15.0, got {shape.get_perimeter()}"
+
+    # Assert the color
+    assert shape.get_color() == 'blue', f"Expected color 'blue', got {shape.get_color()}"
+
+    # Change the color and assert the new color
+    shape.set_color('red')
+    assert shape.get_color() == 'red', f"Expected color 'red', got {shape.get_color()}"
+
+    print("All asserts passed!")
